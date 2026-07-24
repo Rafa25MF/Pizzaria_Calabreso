@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a pizza Quatro Queijos da Pizzaria Calabreso e adicione sua quantidade ao carrinho.">
+    <title>Pizzaria Calabreso - Pizza Quatro Queijos</title>
+    <link rel="stylesheet" href="assets/css/pizza3.css">
+</head>
+
+<body data-produto-nome="Pizza Quatro Queijos" data-produto-preco="35">
+
+    <header>
+        <h1>Pizzaria Calabreso</h1>
+    </header>
+
+    <div class="caixa">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGC7nae_1sfmJfbr9CSl2lPgwXHyNFjZtilA&s" alt="Pizza Quatro Queijos">
+
+        <div class="texto">
+            <h1>Pizza Quatro Queijos</h1>
+        </div>
+
+        <h3>Tamanho: Médio</h3>
+        <p>
+            A pizza de Quatro Queijos é uma das mais tradicionais e queridas pizzas italianas. Ela combina quatro tipos de queijos que se complementam em sabor e textura — normalmente mussarela, provolone, gorgonzola e parmesão (ou requeijão, dependendo da região).
+            O resultado é uma pizza cremosa, com sabor intenso e levemente salgado, ideal para quem ama queijo.
+        </p>
+
+        <p id="preço"></p>
+        <input type="number" id="qt_pizza" placeholder="Qt. de Pizzas" min="1" max="10" inputmode="numeric" required>
+        <a href="index.html"><button id="volt">CANCELAR</button></a>
+        <button id="comprar">COMPRAR</button>
+    </div>
+    <script src="assets/js/produto.js"></script>
+</body>
+
+</html>

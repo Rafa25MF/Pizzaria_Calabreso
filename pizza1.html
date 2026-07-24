@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a pizza Margherita da Pizzaria Calabreso e adicione sua quantidade ao carrinho.">
+    <title>Pizzaria Calabreso - Pizza Margherita</title>
+    <link rel="stylesheet" href="assets/css/pizza1.css">
+</head>
+
+<body data-produto-nome="Pizza Margherita" data-produto-preco="25">
+
+    <header>
+        <h1>Pizzaria Calabreso</h1>
+    </header>
+
+    <div class="caixa">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KFDZkjY8zVpr1ftr2n7Rm_OLf0Eq3inoxw&s" alt="Pizza Margherita">
+
+        <div class="texto">
+            <h1>Pizza Margherita</h1>
+        </div>
+
+        <h3>Tamanho: Médio</h3>
+        <p>
+            A pizza Margherita é uma clássica pizza italiana feita com poucos ingredientes, mas muito sabor.<br> Leva molho de tomate fresco, mussarela de búfala derretida, folhas de manjericão e um fio de azeite de oliva.<br> A combinação realça o sabor
+            dos ingredientes naturais, resultando em uma pizza leve, aromática e tradicional.
+        </p>
+
+        <p id="preço"></p>
+        <input type="number" id="qt_pizza" placeholder="Qt. de Pizzas" min="1" max="10" inputmode="numeric" required>
+        <a href="index.html"><button id="volt">CANCELAR</button></a>
+        <button id="comprar">COMPRAR</button>
+    </div>
+    <script src="assets/js/produto.js"></script>
+</body>
+
+</html>

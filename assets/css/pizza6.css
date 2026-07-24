@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Corpo e tipografia */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #222;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background: linear-gradient(
+        to right,
+        #008000 0%,
+        #008000 33.33%,
+        #ffffff 33.33%,
+        #ffffff 66.66%,
+        #d30000 66.66%,
+        #d30000 100%
+    );
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #d30000;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+
+/* Container principal da pizza */
+
+.caixa {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #eee;
+}
+
+
+/* Imagem da pizza */
+
+.caixa img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.caixa img:hover {
+    transform: scale(1.03);
+}
+
+
+/* Texto ao lado da imagem */
+
+.texto {
+    max-width: 400px;
+    text-align: left;
+    color: #333;
+    font-size: 1.05rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #009246;
+    transition: all 0.3s ease;
+}
+
+.texto h1 {
+    color: #d30000;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Parágrafos */
+
+.caixa p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+
+
+/* Input de quantidade */
+
+input[type="number"] {
+    border-radius: 8px;
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #009246;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 146, 70, 0.3);
+}
+
+
+/* Botões */
+
+button {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    margin-top: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Botão principal */
+
+button#comprar {
+    background-color: #009246;
+}
+
+button#comprar:hover {
+    background-color: #007a38;
+    transform: scale(1.05);
+}
+
+
+/* Botão voltar */
+
+button#volt {
+    background-color: #d30000;
+}
+
+button#volt:hover {
+    background-color: #a80000;
+    transform: scale(1.05);
+}
+
+
+/* Área do preço */
+
+#preço {
+    color: #009246;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: block;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+    .caixa {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    .texto {
+        text-align: center;
+        border-left: none;
+        border-top: 5px solid #009246;
+    }
+    .texto h1 {
+        font-size: 1.6rem;
+    }
+    input[type="number"] {
+        width: 140px;
+        height: 40px;
+    }
+    button#comprar {
+        width: 80%;
+        max-width: 250px;
+    }
+    button#volt {
+        width: 80%;
+        max-width: 250px;
+    }
+}

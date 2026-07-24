@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(
+        to right,
+        #008000 0%,
+        #008000 33.33%,
+        #ffffff 33.33%,
+        #ffffff 66.66%,
+        #d30000 66.66%,
+        #d30000 100%
+    );
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+header img {
+    width: 120px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #d30000;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+main h2 {
+    color: #008000;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    display: inline-block;
+    border-bottom: 4px solid #d30000;
+    padding-bottom: 5px;
+}
+
+.cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.bebidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.pizza-item {
+    background-color: #fff;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.pizza-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.pizza-info {
+    padding: 15px;
+}
+
+.pizza-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #d30000;
+}
+
+.pizza-info p {
+    font-weight: 500;
+    color: #333;
+}
+
+.pizza-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-color: #008000;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 30px;
+    text-align: center;
+    border-top: 5px solid #d30000;
+    font-family: Arial, sans-serif;
+}
+
+footer h2 {
+    color: #008000;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer p:last-child {
+    margin-top: 15px;
+    /* Mais espaço acima do último parágrafo */
+    font-style: italic;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .pizza-info h3 {
+        font-size: 1rem;
+    }
+    .pizza-info p {
+        font-size: 0.9rem;
+    }
+}
+
+#preço {
+    color: #008000;
+    font-weight: bold;
+}
+
+.caixa {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    height: 73px;
+    background: linear-gradient(90deg, 
+        #009246 0%, 
+        #4caf50 25%, 
+        #ffffff 50%, 
+        #e53935 75%, 
+        #ce2b37 100%);
+    border-radius: 15px;
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.2),
+        inset 0 1px 3px rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+
+/* Área de valor */
+
+.valor p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.valor h2 {
+    margin: 0;
+    color: #222;
+    font-weight: bold;
+}
+
+
+/* Botão do carrinho */
+
+.btn-carrinho {
+    background-color: #009246;
+    /* verde da bandeira */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-carrinho:hover {
+    background-color: #007a38;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+    .caixa {
+        width: 95%;
+        bottom: 7px;
+        height: 120px;
+        /* 👈 controla a espessura */
+        background: linear-gradient(90deg, #009246, #ffffff, #ce2b37);
+    }
+    .conteudo {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    .btn-carrinho {
+        width: 100%;
+    }
+}
+
+main h2 {
+    color: #008000;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    display: inline-block;
+    border-bottom: 4px solid #d30000;
+    padding-bottom: 5px;
+}
+
+
+/* Grade de bebidas */
+
+.bebidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* Card de cada bebida */
+
+.bebidas-item {
+    background-color: #fff;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.bebidas-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-color: #008000;
+}
+
+
+/* Imagem da bebida */
+
+.bebidas-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* Informações dentro do card */
+
+.bebidas-info {
+    padding: 15px;
+}
+
+.bebidas-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #d30000;
+}
+
+.bebidas-info #preço {
+    color: #008000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* ===== INPUT DE QUANTIDADE ===== */
+
+.bebidas-info input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.bebidas-info input[type="number"]:focus {
+    border-color: #008000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.3);
+}
+
+
+/* ===== BOTÃO COMPRAR ===== */
+
+.bebidas-info button {
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.bebidas-info button:hover {
+    background-color: #008000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 600px) {
+    .bebidas-info h3 {
+        font-size: 1rem;
+    }
+    .bebidas-info input[type="number"] {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .bebidas-info button {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

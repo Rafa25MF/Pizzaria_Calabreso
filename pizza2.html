@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a pizza Pepperoni da Pizzaria Calabreso e adicione sua quantidade ao carrinho.">
+    <title>Pizzaria Calabreso - Pizza Pepperoni</title>
+    <link rel="stylesheet" href="assets/css/pizza2.css">
+</head>
+
+<body data-produto-nome="Pizza Pepperoni" data-produto-preco="30">
+
+    <header>
+        <h1>Pizzaria Calabreso</h1>
+    </header>
+
+    <div class="caixa">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDd4nehw8UKOEGk8yYWLWcIgiwyj87I_IqnQ&s" alt="Pizza Pepperoni">
+
+        <div class="texto">
+            <h1>Pizza Pepperoni</h1>
+        </div>
+
+        <h3>Tamanho: Médio</h3>
+        <p>
+            A pizza Pepperoni é uma das mais populares e saborosas, conhecida pelo seu toque levemente picante. <br>É preparada com molho de tomate, mussarela derretida e generosas fatias de pepperoni, que ficam crocantes ao assar. Seu sabor marcante
+            agrada todos os gostos e é uma escolha clássica em todo o mundo.
+        </p>
+
+        <p id="preço"></p>
+        <input type="number" id="qt_pizza" placeholder="Qt. de Pizzas" min="1" max="10" inputmode="numeric" required>
+        <a href="index.html"><button id="volt">CANCELAR</button></a>
+        <button id="comprar">COMPRAR</button>
+    </div>
+    <script src="assets/js/produto.js"></script>
+</body>
+
+</html>

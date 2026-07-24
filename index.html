@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore o cardápio da Pizzaria Calabreso, escolha pizzas e bebidas e monte seu carrinho.">
+    <title>Pizzaria Calabreso</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img id="banner" src="assets/images/banner.png" alt="Banner da Pizzaria Calabreso">
+        <h1>Pizzaria Calabreso</h1>
+        <p>Autêntico sabor italiano direto do forno à sua mesa.</p>
+    </header>
+
+
+    <main>
+        <h2>Nosso Cardápio</h2>
+        <div class="cardapio">
+            <a href="pizza1.html" class="pizza-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KFDZkjY8zVpr1ftr2n7Rm_OLf0Eq3inoxw&s" alt="Pizza Margherita">
+                <div class="pizza-info">
+                    <h3>Pizza Margherita</h3>
+                    <h3 id="preço">R$ 25,00</h3>
+                </div>
+            </a>
+
+            <a href="pizza2.html" class="pizza-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDd4nehw8UKOEGk8yYWLWcIgiwyj87I_IqnQ&s" alt="Pizza Pepperoni">
+                <div class="pizza-info">
+                    <h3>Pizza Pepperoni</h3>
+                    <h3 id="preço">R$ 30,00</h3>
+                </div>
+            </a>
+
+            <a href="pizza3.html" class="pizza-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGC7nae_1sfmJfbr9CSl2lPgwXHyNFjZtilA&s" alt="Pizza Quatro Queijos">
+                <div class="pizza-info">
+                    <h3>Pizza Quatro Queijos</h3>
+                    <h3 id="preço">R$ 35,00</h3>
+                </div>
+            </a>
+
+            <a href="pizza4.html" class="pizza-item">
+                <img src="https://harald.com.br/wp-content/uploads/2023/06/captura-de-tela-2023-06-27-131655.png" alt="Pizza Doce de Leite">
+                <div class="pizza-info">
+                    <h3>Pizza Doce de Leite</h3>
+                    <h3 id="preço">R$ 28,00</h3>
+                </div>
+            </a>
+
+            <a href="pizza5.html" class="pizza-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7LqDKBtys40XV00ivvYHsc4-nhww7ftNQyw&s" alt="Pizza Doce de Nutella e M&M">
+                <div class="pizza-info">
+                    <h3>Pizza Doce de Nutella e M&M</h3>
+                    <h3 id="preço">R$ 39,00</h3>
+                </div>
+            </a>
+
+            <a href="pizza6.html" class="pizza-item">
+                <img src="https://debonairspizza.co.za/images/promos/2025/august/on-the-double-doritos/on-the-double-doritos-no-copy.jpg" alt="Pizza de Doritos">
+                <div class="pizza-info">
+                    <h3>Pizza de Doritos</h3>
+                    <h3 id="preço">R$ 45,00</h3>
+                </div>
+            </a>
+    </main>
+    <main>
+        <h2>Bebidas</h2>
+        <div class="bebidas">
+            <div class="bebidas-item">
+                <img src="https://prezunic.vtexassets.com/arquivos/ids/210693/66db573a62edc14e790f8550.jpg?v=638612475473130000" alt="Coca-Cola Lata 350ml">
+                <div class="bebidas-info">
+                    <h3>Coca-Cola Lata 350ml</h3>
+                    <h3 id="preço">R$ 6,00</h3>
+                    <input type="number" id="qt_coca" placeholder="Qtde." min="1" max="10">
+                    <button id="comprar_coca">COMPRAR</button>
+                </div>
+            </div>
+
+            <div class="bebidas-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSwwfU1giQMis9vnCTRqfJcuPcXE1DUf9Erw&s" alt="Dolly Guaraná 2L">
+                <div class="bebidas-info">
+                    <h3>Dolly Guaraná 2L</h3>
+                    <h3 id="preço">R$ 2,90</h3>
+                    <input type="number" id="qt_guarana" placeholder="Qtde." min="1" max="10">
+                    <button id="comprar_guarana">COMPRAR</button>
+                </div>
+            </div>
+
+            <div class="bebidas-item">
+                <img src="https://phygital-files.mercafacil.com/flordaposse/uploads/produto/refrigerante_it_sabores_2lt_cola_dac74f96-1a4a-4b4f-804a-6ddcf4d8a74f.jpg" alt="Refrigerante IT Sabor Cola 2L">
+                <div class="bebidas-info">
+                    <h3>Refrigerante IT Sabor Cola 2L</h3>
+                    <h3 id="preço">R$ 24,90</h3>
+                    <input type="number" id="qt_suco" placeholder="Qtde." min="1" max="10">
+                    <button id="comprar_suco">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="caixa">
+        <div class="conteudo">
+            <div class="valor">
+                <p>Total a pagar:</p>
+                <h2>R$ 89,90</h2>
+            </div>
+            <a href="carrinho.html"><button class="btn-carrinho">🛒 Ver Carrinho</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Contato</h2>
+        <p>📞 Telefone: (11) 1234-5678</p>
+        <p>📍 Endereço: Rua das Pizzas, 123 - São Paulo, SP</p>
+        <p>✉️ Email: contato@pizzariacalabreso.com</p>
+        <p>© 2025 Pizzaria Calabreso - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

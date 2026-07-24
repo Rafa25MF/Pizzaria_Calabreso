@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a pizza Doce de Leite da Pizzaria Calabreso e adicione sua quantidade ao carrinho.">
+    <title>Pizzaria Calabreso - Pizza Doce de Leite</title>
+    <link rel="stylesheet" href="assets/css/pizza4.css">
+
+</head>
+
+<body data-produto-nome="Pizza Doce de Leite" data-produto-preco="28">
+
+    <header>
+        <h1>Pizzaria Calabreso</h1>
+    </header>
+
+    <div class="caixa">
+        <img src="https://harald.com.br/wp-content/uploads/2023/06/captura-de-tela-2023-06-27-131655.png" alt="Pizza Doce de Leite">
+
+        <div class="texto">
+            <h1>Pizza Doce de Leite</h1>
+        </div>
+
+        <h3>Tamanho: Médio</h3>
+        <p>
+            A pizza de doce de leite é uma opção doce e irresistível, geralmente feita com uma massa fina ou média, coberta com doce de leite cremoso e, às vezes, finalizada com queijo, frutas ou castanhas para dar um toque extra de sabor. É uma sobremesa popular
+            que combina a textura macia da massa<br> com a doçura intensa do doce de leite,<br> agradando tanto quem gosta de sobremesas tradicionais quanto quem prefere sabores mais gourmets.
+        </p>
+
+
+        <p id="preço"></p>
+        <input type="number" id="qt_pizza" placeholder="Qt. de Pizzas" min="1" max="10" inputmode="numeric" required>
+        <a href="index.html"><button id="volt">CANCELAR</button></a>
+        <button id="comprar">COMPRAR</button>
+    </div>
+    <script src="assets/js/produto.js"></script>
+</body>
+
+</html>
